@@ -1,0 +1,22 @@
+{
+  "name": "market",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arslanoov/react-market.git"
+  },
+  "author": "Arslanoov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arslanoov/react-market/issues"
+  },
+  "homepage": "https://github.com/Arslanoov/react-market#readme",
+  "dependencies": {
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0"
+  }
+}
