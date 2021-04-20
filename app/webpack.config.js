@@ -5,10 +5,15 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 module.exports = {
+  experiments: {
+    asset: true,
+  },
+
   entry: path.resolve(__dirname, "src", "index.tsx"),
 
   output: {
     path: path.resolve(__dirname, "dist"),
+    assetModuleFilename: "assets/[name][ext]",
   },
 
   resolve: {
@@ -41,6 +46,11 @@ module.exports = {
             },
           },
         ],
+      },
+
+      {
+        test: /\.(png|jpg|jpeg|webp|svg)$/,
+        type: "asset",
       },
     ],
   },
