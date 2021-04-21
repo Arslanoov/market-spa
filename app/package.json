@@ -8,8 +8,8 @@
     "serve": "webpack serve --mode development --hot",
     "serve-all": "webpack serve --mode development",
     "check": "prettier --write 'src/**/*.{ts,tsx}'",
-    "test": "jest --maxWorkers=1",
-    "test:watch": "jest --watch --maxWorkers=1",
+    "test:unit": "jest --maxWorkers=1",
+    "test:unit:watch": "jest --watch --maxWorkers=1",
     "test:e2e": "cypress open"
   },
   "repository": {
