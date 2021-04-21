@@ -1,5 +1,5 @@
 module.exports = {
-  roots: ["<rootDir>/src"],
+  roots: ["<rootDir>/tests"],
 
   preset: "ts-jest",
   testEnvironment: "node",
@@ -16,7 +16,7 @@ module.exports = {
 
   setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
 
-  testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+  testRegex: "(/unit/.*|(\\.|/)(test|spec))\\.tsx?$",
 
   // Module file extensions for importing
   moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"],
