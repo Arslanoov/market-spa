@@ -1,0 +1,10 @@
+@mixin grid-columns($padding) {
+  grid-template-columns:
+    #{$start-name} minmax(#{$padding}, 1fr)
+    repeat(#{$columns-count}, #{$column-start-name} 1fr #{$column-end-name})
+    #{$end-name} minmax(#{$padding}, 1fr);
+}
+
+@mixin grid-columns-without-padding() {
+  grid-template-columns: repeat(#{$columns-count}, #{$column-start-name} 1fr #{$column-end-name});
+}

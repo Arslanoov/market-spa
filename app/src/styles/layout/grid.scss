@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+
+  @include grid-columns(15px);
+}
+
+.fluid-container {
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+
+  @include grid-columns-without-padding();
+}
