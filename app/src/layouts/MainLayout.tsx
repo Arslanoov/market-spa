@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import Nav from "./modules/Nav"
+import Nav from "~/layouts/modules/Nav"
 
 interface MainLayoutProps {
   children: React.ReactChild | React.ReactNode

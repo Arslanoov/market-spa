@@ -1,0 +1,3 @@
+.counter {
+  grid-column: #{$col-start} 1 / #{$col-end} 12;
+}

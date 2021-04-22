@@ -6,7 +6,7 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import NotFound from "./pages/NotFound"
 
-import "./app.scss"
+import "~/styles/main.scss"
 
 const App: React.FC = () => {
   return (
