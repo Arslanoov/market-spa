@@ -9,6 +9,10 @@
     "allowJs": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["src/*"]
+    }
   }
 }

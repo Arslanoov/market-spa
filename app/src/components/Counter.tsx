@@ -2,7 +2,7 @@ import * as React from "react"
 
 import { observer } from "mobx-react-lite"
 
-import CounterStore from "../stores/Counter"
+import CounterStore from "~/stores/Counter"
 
 const Counter: React.FC = observer(() => {
   return (
