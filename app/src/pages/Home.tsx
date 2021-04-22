@@ -2,10 +2,13 @@ import * as React from "react"
 // TODO: Absolute path
 import MainLayout from "../layouts/MainLayout"
 
+import Counter from "../components/Counter"
+
 const Home: React.FC = () => {
   return (
     <MainLayout>
       <div>Home</div>
+      <Counter />
     </MainLayout>
   )
 }
