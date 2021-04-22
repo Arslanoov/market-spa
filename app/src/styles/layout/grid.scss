@@ -3,6 +3,26 @@
   grid-auto-rows: minmax(min-content, max-content);
 
   @include grid-columns(15px);
+
+  @include respond-from(350px) {
+    @include grid-columns(35px);
+  }
+
+  /*
+    TODO: Remove duplicate from nuxt blog
+    @see https://github.com/Arslanoov/nuxt-blog/blob/main/app/assets/styles/layout/grid.less
+  */
+  @include respond-from(575.98px) {
+    @include grid-columns(calc(50vw - 360px));
+  }
+
+  @include respond-from(991.98px) {
+    @include grid-columns(calc(50vw - 480px));
+  }
+
+  @include respond-from(1199.98px) {
+    @include grid-columns(calc(50vw - 590px));
+  }
 }
 
 .fluid-container {

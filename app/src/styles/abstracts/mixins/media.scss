@@ -1,0 +1,23 @@
+@mixin respond($width, $with-screen: false) {
+  @if $with-screen {
+    @media screen and (max-width: $width) {
+      @content;
+    }
+  } @else {
+    @media (max-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-from($width, $with-screen: false) {
+  @if $with-screen {
+    @media screen and (min-width: $width) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $width) {
+      @content;
+    }
+  }
+}

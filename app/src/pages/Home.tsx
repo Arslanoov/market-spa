@@ -2,7 +2,7 @@ import * as React from "react"
 
 import MainLayout from "~/layouts/MainLayout"
 
-import Counter from "~/components/Counter"
+import Counter from "~/components/common/counter"
 
 const Home: React.FC = () => {
   return (

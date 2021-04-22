@@ -4,9 +4,4 @@
 @import "abstracts/variables/typography";
 
 @import "abstracts/mixins/grid";
-
-@import "base/media.scss";
-@import "base/reset.scss";
-@import "base/typography.scss";
-
-@import "layout/grid";
+@import "abstracts/mixins/media";
