@@ -14,5 +14,8 @@
     "paths": {
       "~/*": ["src/*"]
     }
-  }
+  },
+  "includes" :[
+    "./index.d.ts"
+  ]
 }
