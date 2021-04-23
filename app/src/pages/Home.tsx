@@ -2,13 +2,12 @@ import * as React from "react"
 
 import MainLayout from "~/layouts/MainLayout"
 
-import Counter from "~/components/common/counter"
+import Welcome from "~/components/common/welcome/Welcome"
 
 const Home: React.FC = () => {
   return (
     <MainLayout>
-      <div>Home</div>
-      <Counter />
+      <Welcome />
     </MainLayout>
   )
 }
