@@ -8,7 +8,7 @@
 
   overflow-y: hidden;
 
-  background-color: rgba(0, 0, 0, .07);
+  background-color: $welcome-background-color;
 
   &__title {
     position: absolute;
@@ -23,14 +23,17 @@
     writing-mode: vertical-rl;
     text-orientation: mixed;
 
-    font-size: 35rem;
-    font-weight: 700;
+    font-size: $welcome-title-font-size;
+    font-weight: $welcome-title-font-weight;
+    line-height: $welcome-title-line-height;
+    letter-spacing: $welcome-title-letter-spacing;
 
-    color: #bcae9a;
-    opacity: 0.2;
-    line-height: .5;
+    user-select: none;
 
-    letter-spacing: -24.5px;
+    color: $welcome-title-color;
+    opacity: $welcome-title-opacity;
+
+    z-index: -1;
 
     @include respond(map-get($sizes, "mobile")) {
       display: none;
@@ -65,18 +68,18 @@
   &__story {
     margin-bottom: 1.5rem;
 
-    font-size: 5rem;
-    font-weight: 800;
-    letter-spacing: -0.35rem;
+    font-size: $welcome-story-font-size;
+    font-weight: $welcome-story-font-weight;
+    letter-spacing: $welcome-story-letter-spacing;
 
-    color: #333333;
+    color: $welcome-story-color;
   }
 
   &__text,
   &__author {
-    font-size: 1.4rem;
+    font-size: $welcome-story-text-author-font-size;
 
-    color: #888888;
+    color: $welcome-text-author-color;
   }
 
   &__text {
