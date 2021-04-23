@@ -13,15 +13,15 @@
     @see https://github.com/Arslanoov/nuxt-blog/blob/main/app/assets/styles/layout/grid.less
   */
   @include respond-from(575.98px) {
-    @include grid-columns(calc(50vw - 360px));
-  }
-
-  @include respond-from(991.98px) {
-    @include grid-columns(calc(50vw - 480px));
+    @include grid-columns(calc(50vw - 300px));
   }
 
   @include respond-from(1199.98px) {
-    @include grid-columns(calc(50vw - 590px));
+    @include grid-columns(calc(50vw - 400px));
+  }
+
+  @include respond-from(1499.98px) {
+    @include grid-columns(calc(50vw - 600px));
   }
 }
 

@@ -9,7 +9,7 @@ interface MainLayoutProps {
 const MainLayout: React.FC<MainLayoutProps> = ({ children }: MainLayoutProps) => {
   return (
     <div className="main-layout">
-      <Nav />
+      {/*<Nav />*/}
       {children}
     </div>
   )

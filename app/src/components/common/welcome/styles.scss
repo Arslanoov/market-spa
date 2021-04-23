@@ -1,0 +1,35 @@
+.welcome {
+  position: relative;
+
+  max-height: 100vh;
+  height: 100vh;
+
+  overflow-y: hidden;
+
+  &__title {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+
+    grid-column: #{$start} / span 1;
+
+    justify-self: end;
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    font-size: 35rem;
+    font-weight: 700;
+
+    color: #bcae9a;
+    opacity: 0.2;
+    line-height: .5;
+
+    letter-spacing: -24.5px;
+  }
+
+  &__content {
+    @include full-grid-width();
+  }
+}
