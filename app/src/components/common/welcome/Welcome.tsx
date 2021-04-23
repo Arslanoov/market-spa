@@ -27,6 +27,8 @@ const Welcome: React.FC = () => {
         </div>
         <img className="welcome__sign" src={Sign} alt="" />
         <div className="welcome__author">Mr. Barak - CEO s.u.m.o</div>
+
+        <img className="welcome__image welcome__image_mobile" src={Image} alt="" />
       </div>
       <img className="welcome__image" src={Image} alt="" />
     </div>

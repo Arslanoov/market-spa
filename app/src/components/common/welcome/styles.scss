@@ -31,6 +31,10 @@
     line-height: .5;
 
     letter-spacing: -24.5px;
+
+    @include respond(map-get($sizes, "mobile")) {
+      display: none;
+    }
   }
 
   &__content {
@@ -44,6 +48,18 @@
     max-width: 85%;
 
     padding-left: 3rem;
+
+    @include respond(map-get($sizes, "desktop-sm")) {
+      max-width: 100%;
+    }
+
+    @include respond(map-get($sizes, "tablet")) {
+      grid-column: #{$col-start} 1 / #{$col-end} 12;
+    }
+
+    @include respond(map-get($sizes, "mobile")) {
+      padding-left: 0;
+    }
   }
 
   &__story {
@@ -84,5 +100,22 @@
     grid-column: #{$col-start} 9 / -1;
 
     object-fit: cover;
+
+    @include respond(map-get($sizes, "tablet")) {
+      display: none;
+    }
+
+    &_mobile {
+      display: none;
+
+      @include respond(map-get($sizes, "tablet")) {
+        display: block;
+
+        width: 100%;
+        max-height: 20rem;
+
+        margin-top: 2rem;
+      }
+    }
   }
 }
