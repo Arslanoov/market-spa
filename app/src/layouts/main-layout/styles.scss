@@ -1,0 +1,7 @@
+.breadcrumbs-container {
+  &__items {
+    @include full-grid-page();
+
+    margin: 2rem 3rem;
+  }
+}
