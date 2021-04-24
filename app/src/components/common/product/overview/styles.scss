@@ -7,6 +7,10 @@
   &,
   &__product {
     max-width: 37.7rem;
+
+    @include respond(map-get($sizes, "mobile-sm")) {
+      max-width: 30rem;
+    }
   }
 
   &__product {
