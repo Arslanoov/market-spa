@@ -8,13 +8,13 @@
 .footer {
   padding: 6rem 0;
 
-  background-color: #f5f5f5;
+  background-color: $footer-background-color;
 
   &__columns {
     display: flex;
     justify-content: space-between;
 
-    font-size: 1.4rem;
+    font-size: $footer-columns-font-size;
 
     @include respond(map-get($sizes, "tablet")) {
       flex-wrap: wrap;
@@ -52,14 +52,14 @@
     &-title {
       margin-bottom: 3rem;
 
-      font-weight: 700;
+      font-weight: $footer-title-font-weight;
       text-transform: uppercase;
 
-      color: #333;
+      color: $footer-title-color;
     }
 
     &-value {
-      color: #888;
+      color: $footer-title-value-color;
 
       @include pointer-on-hover();
 
@@ -90,8 +90,8 @@
   &__copyright {
     margin-bottom: 1.6rem;
 
-    font-size: 1.4rem;
+    font-size: $footer-copyright-font-size;
 
-    color: #888;
+    color: $footer-title-copyright-color;
   }
 }
