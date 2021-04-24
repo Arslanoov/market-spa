@@ -44,6 +44,10 @@
 
       margin-left: 1rem;
     }
+
+    @include respond(map-get($sizes, "tablet")) {
+      display: none;
+    }
   }
 
   &__products {
@@ -52,6 +56,11 @@
     align-items: center;
 
     @include full-grid-width();
+
+    @include respond(map-get($sizes, "tablet")) {
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   &__product {
@@ -59,6 +68,11 @@
 
     &:not(:last-of-type) {
       margin-right: 2rem;
+
+      @include respond(map-get($sizes, "desktop-md")) {
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
     }
   }
 }
