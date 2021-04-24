@@ -1,11 +1,54 @@
 .products-container {
+  margin: 2rem 0;
+
   &__sidebar {
     @include grid-col-range(1, 4);
 
     margin-right: 3rem;
+
+    @include respond(map-get($sizes, "tablet")) {
+      @include full-grid-width();
+    }
   }
 
   &__content {
     @include grid-col-range(5, 12);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include respond(map-get($sizes, "tablet")) {
+      @include full-grid-width();
+    }
+
+    @include respond(map-get($sizes, "tablet")) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    max-width: calc(33% - 3rem);
+
+    margin-bottom: 5rem;
+
+    @include respond(map-get($sizes, "desktop")) {
+      max-width: calc(50% - 3rem);
+    }
+
+    @include respond(map-get($sizes, "tablet")) {
+      max-width: 100%;
+
+      margin-bottom: 2rem;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 3rem;
+
+      @include respond(map-get($sizes, "tablet")) {
+        margin-right: 0;
+      }
+    }
   }
 }
