@@ -1,71 +1,81 @@
 // Common
 $white: #fff;
 $black: #000;
+$grey: #888;
+$mine-shaft: #333;
+$malta: #bcae9a;
+$sorrell-brown: #ceb799;
+$silver: #bcbcbc;
 
 // Welcome
 $welcome-background-color: rgba($black, .07);
-$welcome-title-color: #bcae9a;
+$welcome-title-color: $malta;
 $welcome-title-opacity: .2;
-$welcome-story-color: #333;
-$welcome-text-author-color: #888;
+$welcome-story-color: $mine-shaft;
+$welcome-text-author-color: $grey;
 
 // Header
 $header-box-shadow: 0 .3rem .5rem rgba($black, .05);
 
 // Hamburger
-$hamburger-background-color: #888;
+$hamburger-background-color: $grey;
 
 // Logo
-$logo-title-color: #333;
-$logo-subtitle-color: #bcbcbc;
-$logo-line-background-color: #bcbcbc;
+$logo-title-color: $mine-shaft;
+$logo-subtitle-color: $silver;
+$logo-line-background-color: $silver;
 $logo-subtitle-background-color: $white;
 
 // Nav cart
-$nav-cart-color: #888;
+$nav-cart-color: $grey;
 
 // New arrivals
-$new-arrivals-description-color: #888;
+$new-arrivals-description-color: $grey;
 
 // Product card
-$product-card-border: .1rem solid #ceb799;
-$product-card-transparent-border: .1rem solid rgba(#ceb799, 0);
-$product-name-color: #333;
-$product-price-color: #ceb799;
+$product-card-border: .1rem solid $sorrell-brown;
+$product-card-transparent-border: .1rem solid rgba($sorrell-brown, 0);
+$product-name-color: $mine-shaft;
+$product-price-color: $sorrell-brown;
 
 // Card control
 $card-control-color: $white;
-$card-control-background-color: #ceb799;
+$card-control-background-color: $sorrell-brown;
 $card-control-item-hover-background-color: #b7a58d;
 
 // Product overview
 $product-overview-background-color: rgba($black, .07);
-$product-overview-title-detail-color: #333;
-$product-overview-description-color: #888;
-$product-overview-description-important-color: #333;
-$product-overview-detail-border: .1rem solid #333;
+$product-overview-title-detail-color: $mine-shaft;
+$product-overview-description-color: $grey;
+$product-overview-description-important-color: $mine-shaft;
+$product-overview-detail-border: .1rem solid $mine-shaft;
 $product-overview-detail-background: transparent;
 
 // Overview Add
 $overview-add-icon-modal-background-color: $white;
 $overview-add-icon-box-shadow: 0 0 .5rem rgba($black, .1);
 $overview-add-icon-hover-color: $white;
-$overview-add-icon-hover-background-color: #ceb799;
+$overview-add-icon-hover-background-color: $sorrell-brown;
 
 // Add modal
 $add-modal-color: $white;
-$add-modal-background-color: #ceb799;
+$add-modal-background-color: $sorrell-brown;
 
 // Quotes
-$quotes-title-color: #888;
-$quotes-dot-border: .2rem solid #ceb799;
-$quotes-active-dot-background-color: #ceb799;
-$quotes-quote-color: #333;
-$quotes-author-color: #888;
-$quotes-name-color: #333;
+$quotes-title-color: $grey;
+$quotes-dot-border: .2rem solid $sorrell-brown;
+$quotes-active-dot-background-color: $sorrell-brown;
+$quotes-quote-color: $mine-shaft;
+$quotes-author-color: $grey;
+$quotes-name-color: $mine-shaft;
 
 // Footer
 $footer-background-color: #f5f5f5;
-$footer-title-color: #333;
-$footer-title-value-color: #888;
-$footer-title-copyright-color: #888;
+$footer-title-color: $mine-shaft;
+$footer-title-value-color: $grey;
+$footer-title-copyright-color: $grey;
+
+// Breadcrumbs
+$breadcrumbs-name-color: $grey;
+$breadcrumbs-latest-name-color: $mine-shaft;
+$breadcrumbs-line-background: $grey;

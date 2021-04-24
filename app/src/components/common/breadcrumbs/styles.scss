@@ -1,0 +1,37 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+
+  font-size: $breadcrumbs-font-size;
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__name {
+    margin-right: 1rem;
+
+    text-decoration: none;
+
+    color: $breadcrumbs-name-color;
+
+    @include pointer-on-hover();
+
+    &_latest {
+      color: $breadcrumbs-latest-name-color;
+    }
+  }
+
+  &__line {
+    align-self: stretch;
+
+    width: .1rem;
+
+    background-color: $breadcrumbs-line-background;
+  }
+}
