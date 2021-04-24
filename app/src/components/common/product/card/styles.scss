@@ -9,10 +9,10 @@
 
   transition: all .5s;
 
-  border: .1rem solid rgba(#ceb799, 0);
+  border: $product-card-transparent-border;
 
   &:hover {
-    border: .1rem solid #ceb799;
+    border: $product-card-border;
 
     .product-card {
       &__control {
@@ -28,7 +28,7 @@
   &__info {
     padding: 1rem 0;
 
-    font-size: 1.4rem;
+    font-size: $product-card-info-font-size;
 
     text-align: center;
   }
@@ -36,13 +36,13 @@
   &__name {
     margin-bottom: .5rem;
 
-    color: #333;
+    color: $product-name-color;
   }
 
   &__price {
-    font-weight: 700;
+    font-weight: $product-card-price-font-weight;
 
-    color: #ceb799;
+    color: $product-price-color;
   }
 
   &__control {

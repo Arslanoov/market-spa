@@ -10,16 +10,16 @@
   }
 
   &__title {
-    font-size: 2.8rem;
-    font-weight: 700;
+    font-size: $new-arrivals-title-font-size;
+    font-weight: $new-arrivals-title-font-weight;
 
     text-transform: uppercase;
   }
 
   &__description {
-    font-size: 1.4rem;
+    font-size: $new-arrivals-description-font-size;
 
-    color: #888888;
+    color: $new-arrivals-description-color;
   }
 }
 
@@ -66,12 +66,16 @@
   &__product {
     flex-basis: 25%;
 
+    @include respond(map-get($sizes, "tablet")) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+
     &:not(:last-of-type) {
       margin-right: 2rem;
 
-      @include respond(map-get($sizes, "desktop-md")) {
+      @include respond(map-get($sizes, "tablet")) {
         margin-right: 0;
-        margin-bottom: 2rem;
       }
     }
   }
