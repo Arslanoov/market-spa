@@ -20,9 +20,9 @@
   }
 
   &__text {
-    font-size: 1.4rem;
+    font-size: $quotes-font-size;
 
-    color: #888;
+    color: $quotes-title-color;
   }
 
   &__pagination {
@@ -35,7 +35,7 @@
 
       border-radius: 2rem;
 
-      border: .2rem solid #ceb799;
+      border: $quotes-dot-border;
 
       @include pointer-on-hover();
 
@@ -44,19 +44,19 @@
       }
 
       &_active {
-        background-color: #ceb799;
+        background-color: $quotes-active-dot-background-color;
       }
     }
   }
 
   &__quote {
-    font-size: 4rem;
-    font-weight: 700;
+    font-size: $quotes-quote-font-size;
+    font-weight: $quotes-quote-font-weight;
 
-    color: #333333;
+    color: $quotes-quote-color;
 
     @include respond(map-get($sizes, "tablet")) {
-      font-size: 3rem;
+      font-size: $quotes-quote-font-size-small;
     }
   }
 
@@ -64,10 +64,10 @@
     display: flex;
     align-items: center;
 
-    font-size: 1.4rem;
+    font-size: $quotes-author-font-size;
     text-transform: uppercase;
 
-    color: #888888;
+    color: $quotes-author-color;
 
     &-name,
     &-position {
@@ -75,9 +75,9 @@
     }
 
     &-name {
-      font-weight: 700;
+      font-weight: $quotes-name-font-weight;
 
-      color: #333333;
+      color: $quotes-name-color;
     }
 
     &-position {
