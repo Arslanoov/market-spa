@@ -1,0 +1,19 @@
+.nav-cart {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+
+    margin-right: .7rem;
+
+    @include pointer-on-hover();
+  }
+
+  &__items-count {
+    font-size: 1.4rem;
+
+    color: #888;
+  }
+}
