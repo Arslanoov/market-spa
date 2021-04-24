@@ -16,7 +16,11 @@ const Hamburger: React.FC<HamburgerProps> = ({ linesCount = 3 }: HamburgerProps)
     )
   }
 
-  return <div className="hamburger">{lines}</div>
+  return (
+    <div className="hamburger">
+      <div className="hamburger__wrapper">{lines}</div>
+    </div>
+  )
 }
 
 export default Hamburger
