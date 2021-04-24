@@ -1,0 +1,53 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include pointer-on-hover();
+
+  box-sizing: content-box;
+
+  transition: all .5s;
+
+  border: .1rem solid rgba(#ceb799, 0);
+
+  &:hover {
+    border: .1rem solid #ceb799;
+
+    .product-card {
+      &__control {
+        visibility: visible;
+      }
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+  }
+
+  &__info {
+    padding: 1rem 0;
+
+    font-size: 1.4rem;
+
+    text-align: center;
+  }
+
+  &__name {
+    margin-bottom: .5rem;
+
+    color: #333;
+  }
+
+  &__price {
+    font-weight: 700;
+
+    color: #ceb799;
+  }
+
+  &__control {
+    visibility: hidden;
+
+    width: 100%;
+  }
+}
