@@ -5,7 +5,7 @@
 
   padding: 1.7rem 3rem;
 
-  box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .05);
+  box-shadow: $header-box-shadow;
 
   &__hamburger {
     grid-column: #{$start} / span 1;

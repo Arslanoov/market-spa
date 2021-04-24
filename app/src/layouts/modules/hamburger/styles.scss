@@ -5,13 +5,13 @@
   @include pointer-on-hover();
 
   &__line {
-    width: 3rem;
-    height: .2rem;
+    width: $hamburger-line-width;
+    height: $hamburger-line-height;
 
-    background-color: #888;
+    background-color: $hamburger-background-color;
 
     &:not(:last-of-type) {
-      margin-bottom: .8rem;
+      margin-bottom: $hamburger-line-margin;
     }
   }
 }

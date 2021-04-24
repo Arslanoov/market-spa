@@ -12,8 +12,8 @@
   }
 
   &__items-count {
-    font-size: 1.4rem;
+    font-size: $nav-cart-font-size;
 
-    color: #888;
+    color: $nav-cart-color;
   }
 }
