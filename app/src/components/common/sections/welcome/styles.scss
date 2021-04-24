@@ -1,14 +1,15 @@
 .welcome {
   position: relative;
 
-  grid-template-rows: 100vh;
-
-  max-height: 100vh;
-  height: 100vh;
+  grid-template-rows: minmax(100vh, max-content);
 
   overflow-y: hidden;
 
   background-color: $welcome-background-color;
+
+  @include respond(map-get($sizes, "mobile")) {
+    padding: 2rem 0;
+  }
 
   &__title {
     position: absolute;

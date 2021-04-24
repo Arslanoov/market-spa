@@ -8,3 +8,32 @@ $welcome-title-color: #bcae9a;
 $welcome-title-opacity: .2;
 $welcome-story-color: #333;
 $welcome-text-author-color: #888;
+
+// Header
+$header-box-shadow: 0 .3rem .5rem rgba($black, .05);
+
+// Hamburger
+$hamburger-background-color: #888;
+
+// Logo
+$logo-title-color: #333;
+$logo-subtitle-color: #bcbcbc;
+$logo-line-background-color: #bcbcbc;
+$logo-subtitle-background-color: $white;
+
+// Nav cart
+$nav-cart-color: #888;
+
+// New arrivals
+$new-arrivals-description-color: #888;
+
+// Product card
+$product-card-border: .1rem solid #ceb799;
+$product-card-transparent-border: .1rem solid rgba(#ceb799, 0);
+$product-name-color: #333;
+$product-price-color: #ceb799;
+
+// Card control
+$card-control-color: $white;
+$card-control-background-color: #ceb799;
+$card-control-item-hover-background-color: #b7a58d;

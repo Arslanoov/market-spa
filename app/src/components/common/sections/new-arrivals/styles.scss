@@ -1,0 +1,84 @@
+.new-arrivals {
+  padding: 6rem 0 3rem;
+
+  &__wrapper {
+    @include full-grid-width();
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  &__title {
+    font-size: $new-arrivals-title-font-size;
+    font-weight: $new-arrivals-title-font-weight;
+
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-size: $new-arrivals-description-font-size;
+
+    color: $new-arrivals-description-color;
+  }
+}
+
+.cards {
+  padding-bottom: 2rem;
+
+  &__arrow {
+    @include pointer-on-hover();
+    align-self: center;
+
+    margin-top: -10rem;
+
+    &_left {
+      grid-column: #{$start} / span 1;
+      justify-self: end;
+
+      margin-right: 1rem;
+    }
+
+    &_right {
+      grid-column: #{$end} / -1;
+
+      margin-left: 1rem;
+    }
+
+    @include respond(map-get($sizes, "tablet")) {
+      display: none;
+    }
+  }
+
+  &__products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include full-grid-width();
+
+    @include respond(map-get($sizes, "tablet")) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__product {
+    flex-basis: 25%;
+
+    @include respond(map-get($sizes, "tablet")) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 2rem;
+
+      @include respond(map-get($sizes, "tablet")) {
+        margin-right: 0;
+      }
+    }
+  }
+}

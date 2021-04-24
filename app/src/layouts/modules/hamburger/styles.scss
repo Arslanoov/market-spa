@@ -1,0 +1,21 @@
+.hamburger {
+  display: inline-flex;
+
+  @include pointer-on-hover();
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__line {
+    width: $hamburger-line-width;
+    height: $hamburger-line-height;
+
+    background-color: $hamburger-background-color;
+
+    &:not(:last-of-type) {
+      margin-bottom: $hamburger-line-margin;
+    }
+  }
+}

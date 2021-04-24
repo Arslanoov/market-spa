@@ -1,0 +1,39 @@
+.card-control {
+  display: flex;
+  align-items: stretch;
+
+  font-size: $card-control-font-size;
+  font-weight: $card-control-font-weight;
+
+  color: $card-control-color;
+  background-color: $card-control-background-color;
+
+  @include respond(map-get($sizes, "desktop-md")) {
+    font-size: $card-control-small-font-size;
+  }
+
+  &__item {
+    position: relative;
+
+    padding: 1.3rem 1rem;
+
+    transition: opacity .5s, background-color .5s;
+
+    z-index: 1;
+
+    &:hover {
+      background-color: $card-control-item-hover-background-color;
+    }
+
+    &:first-of-type {
+      flex: 1;
+
+      text-transform: uppercase;
+    }
+
+    &:not(:first-of-type) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
