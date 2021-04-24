@@ -1,7 +1,7 @@
 .product-overview {
   padding: 8rem 0;
 
-  background-color: rgba(0, 0, 0, 0.07);
+  background-color: $product-overview-background-color;
 
   &__wrapper {
     @include full-grid-width();
@@ -46,21 +46,21 @@
 
   &__title,
   &__detail {
-    color: #333;
+    color: $product-overview-title-detail-color;
   }
 
   &__title {
     margin-bottom: 3rem;
 
-    font-size: 4.5rem;
-    font-weight: 800;
-    line-height: 5.5rem;
+    font-size: $product-overview-title-font-size;
+    font-weight: $product-overview-title-font-weight;
+    line-height: $product-overview-title-line-height;
   }
 
   &__description {
-    font-size: 1.4rem;
+    font-size: $product-overview-description-font-size;
 
-    color: #888;
+    color: $product-overview-description-color;
 
     &:not(:last-of-type) {
       margin-bottom: 1.5rem;
@@ -71,24 +71,24 @@
     }
 
     &_important {
-      font-weight: 700;
+      font-weight: $product-overview-important-font-weight;
 
-      color: #333;
+      color: $product-overview-description-important-color;
     }
   }
 
   &__detail {
     padding: 1.5rem 2.8rem;
 
-    border: .1rem solid #333333;
+    border: $product-overview-detail-border;
     outline: 0;
 
-    background: transparent;
+    background: $product-overview-detail-background;
 
     text-transform: uppercase;
 
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: $product-overview-detail-font-size;
+    font-weight: $product-overview-detail-font-weight;
 
     @include pointer-on-hover();
   }

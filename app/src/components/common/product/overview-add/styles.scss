@@ -3,13 +3,14 @@
 
   border-radius: 2rem;
 
+  /* TODO: Add animations vars */
   transition: opacity .5s;
 
   @include pointer-on-hover();
 
   &__icon,
   &__modal {
-    background-color: #ffffff;
+    background-color: $overview-add-icon-modal-background-color;
   }
 
   &__icon {
@@ -28,13 +29,13 @@
 
     border-radius: 2rem;
 
-    box-shadow: 0 0 .5rem rgba(0, 0, 0, .1);
+    box-shadow: $overview-add-icon-box-shadow;
 
     transition: background-color .5s;
 
     &:hover {
-      color: #fff;
-      background-color: #ceb799;
+      color: $overview-add-icon-hover-color;
+      background-color: $overview-add-icon-hover-background-color;
       background-image: url("~/assets/images/overview/icons/add_white.svg");
 
       & + .overview-add__modal {
@@ -48,11 +49,11 @@
   min-width: 25rem;
   padding: 1.8rem 2.7rem 2.3rem 2rem;
 
-  font-size: 1.4rem;
+  font-size: $add-modal-font-size;
   border-radius: 5px;
 
-  color: #ffffff;
-  background-color: #ceb799;
+  color: $add-modal-color;
+  background-color: $add-modal-background-color;
 
   opacity: 0;
 
@@ -79,7 +80,7 @@
   &__title {
     margin-bottom: 1rem;
 
-    font-weight: 700;
+    font-weight: $add-modal-title-font-weight;
   }
 
   &__description {

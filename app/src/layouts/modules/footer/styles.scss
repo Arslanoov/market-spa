@@ -1,0 +1,97 @@
+.footer,
+.footer-bottom {
+  &__wrapper {
+    @include full-grid-width();
+  }
+}
+
+.footer {
+  padding: 6rem 0;
+
+  background-color: $footer-background-color;
+
+  &__columns {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: $footer-columns-font-size;
+
+    @include respond(map-get($sizes, "tablet")) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    flex-basis: 25%;
+
+    @include respond(map-get($sizes, "tablet")) {
+      flex-basis: 45%;
+    }
+
+    @include respond(map-get($sizes, "mobile")) {
+      flex-basis: 100%;
+    }
+
+    &:not(:last-of-type) {
+      margin-right: 6rem;
+
+      @include respond(map-get($sizes, "tablet")) {
+        margin-right: 1rem;
+        margin-bottom: 4rem;
+      }
+
+      @include respond(map-get($sizes, "mobile")) {
+        margin-right: 0;
+      }
+    }
+
+    &-icon {
+      margin-right: 1rem;
+    }
+
+    &-title {
+      margin-bottom: 3rem;
+
+      font-weight: $footer-title-font-weight;
+      text-transform: uppercase;
+
+      color: $footer-title-color;
+    }
+
+    &-value {
+      color: $footer-title-value-color;
+
+      @include pointer-on-hover();
+
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+
+      &_with-icon {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  padding: 3rem 0;
+
+  &__wrapper {
+    @include full-grid-width();
+    justify-self: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__copyright {
+    margin-bottom: 1.6rem;
+
+    font-size: $footer-copyright-font-size;
+
+    color: $footer-title-copyright-color;
+  }
+}

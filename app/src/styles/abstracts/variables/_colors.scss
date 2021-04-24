@@ -37,3 +37,35 @@ $product-price-color: #ceb799;
 $card-control-color: $white;
 $card-control-background-color: #ceb799;
 $card-control-item-hover-background-color: #b7a58d;
+
+// Product overview
+$product-overview-background-color: rgba($black, .07);
+$product-overview-title-detail-color: #333;
+$product-overview-description-color: #888;
+$product-overview-description-important-color: #333;
+$product-overview-detail-border: .1rem solid #333;
+$product-overview-detail-background: transparent;
+
+// Overview Add
+$overview-add-icon-modal-background-color: $white;
+$overview-add-icon-box-shadow: 0 0 .5rem rgba($black, .1);
+$overview-add-icon-hover-color: $white;
+$overview-add-icon-hover-background-color: #ceb799;
+
+// Add modal
+$add-modal-color: $white;
+$add-modal-background-color: #ceb799;
+
+// Quotes
+$quotes-title-color: #888;
+$quotes-dot-border: .2rem solid #ceb799;
+$quotes-active-dot-background-color: #ceb799;
+$quotes-quote-color: #333;
+$quotes-author-color: #888;
+$quotes-name-color: #333;
+
+// Footer
+$footer-background-color: #f5f5f5;
+$footer-title-color: #333;
+$footer-title-value-color: #888;
+$footer-title-copyright-color: #888;
