@@ -4,6 +4,7 @@ import ListFilter from "~/components/common/filters/list"
 
 import "./styles.scss"
 import SquareFilter from "~/components/common/filters/square"
+import TagFilter from "~/components/common/filters/tag"
 
 const FiltersSidebar: React.FC = () => {
   return (
@@ -33,9 +34,7 @@ const FiltersSidebar: React.FC = () => {
           },
         ]}
       />
-
       <div className="filters-sidebar__line"> </div>
-
       <ListFilter
         title="Filter by price"
         filters={[
@@ -65,9 +64,7 @@ const FiltersSidebar: React.FC = () => {
           },
         ]}
       />
-
       <div className="filters-sidebar__line"> </div>
-
       <SquareFilter
         title="Filter by color"
         items={[
@@ -110,9 +107,7 @@ const FiltersSidebar: React.FC = () => {
         ]}
         withBorder
       />
-
       <div className="filters-sidebar__line"> </div>
-
       <SquareFilter
         title="Filter by size"
         items={[
@@ -155,9 +150,7 @@ const FiltersSidebar: React.FC = () => {
         ]}
         withActiveColor
       />
-
       <div className="filters-sidebar__line"> </div>
-
       <ListFilter
         title="Filter by manufacturer"
         filters={[
@@ -180,6 +173,45 @@ const FiltersSidebar: React.FC = () => {
         ]}
       />
 
+      <div className="filters-sidebar__line"> </div>
+
+      <TagFilter
+        title="Popular tag"
+        tags={[
+          {
+            id: 1,
+            name: "Watch",
+          },
+          {
+            id: 2,
+            name: "Rolex",
+          },
+          {
+            id: 3,
+            name: "Leather",
+          },
+          {
+            id: 4,
+            name: "Citizen",
+          },
+          {
+            id: 5,
+            name: "Omega",
+          },
+          {
+            id: 6,
+            name: "Casio",
+          },
+          {
+            id: 7,
+            name: "Men",
+          },
+          {
+            id: 8,
+            name: "Women’s watch",
+          },
+        ]}
+      />
       <div className="filters-sidebar__line"> </div>
     </div>
   )
