@@ -16,3 +16,7 @@
 @mixin full-grid-page() {
   grid-column: #{$start} / -1;
 }
+
+@mixin grid-col-range($fromIndex, $toIndex) {
+  grid-column: #{$col-start} #{$fromIndex} / #{$col-end} #{$toIndex};
+}

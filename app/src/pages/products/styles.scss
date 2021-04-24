@@ -1,0 +1,11 @@
+.products-container {
+  &__sidebar {
+    @include grid-col-range(1, 4);
+
+    margin-right: 3rem;
+  }
+
+  &__content {
+    @include grid-col-range(5, 12);
+  }
+}
