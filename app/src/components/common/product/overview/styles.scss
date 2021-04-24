@@ -4,14 +4,17 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  &,
+  &__product {
+    max-width: 37.7rem;
+  }
+
   &__product {
     position: relative;
 
     z-index: -2;
 
     visibility: hidden;
-
-    max-width: 37.7rem;
   }
 
   /* TODO: Finish animation */
