@@ -17,6 +17,11 @@
     color: $logo-title-color;
   }
 
+  &__dot {
+    font-size: $logo-title-dot-font-size;
+    letter-spacing: $logo-title-dot-letter-spacing;
+  }
+
   &__subtitle {
     font-size: $logo-subtitle-font-size;
     font-weight: $logo-subtitle-font-weight;
