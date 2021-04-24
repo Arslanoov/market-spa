@@ -1,4 +1,6 @@
-export interface FilterInterface {
+export interface FilterItemInterface {
   id: number | string
-  name: string
+  value?: string | number | null
+  color?: string
+  background?: string
 }
