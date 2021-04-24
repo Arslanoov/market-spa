@@ -1,0 +1,25 @@
+.gallery {
+  margin: 3rem 0;
+
+  &__wrapper {
+    @include full-grid-page();
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    @include respond(map-get($sizes, "tablet")) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    max-width: 100%;
+
+    margin-bottom: 4rem;
+
+    @include pointer-on-hover();
+  }
+}

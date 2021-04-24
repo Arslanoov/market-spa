@@ -12,3 +12,7 @@
 @mixin full-grid-width() {
   grid-column: #{$col-start} 1 / #{$col-end} 12;
 }
+
+@mixin full-grid-page() {
+  grid-column: #{$start} / -1;
+}

@@ -1,0 +1,47 @@
+.overview {
+  position: relative;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &,
+  &__product {
+    max-width: 37.7rem;
+
+    @include respond(map-get($sizes, "mobile-sm")) {
+      max-width: 30rem;
+    }
+  }
+
+  &__product {
+    position: relative;
+
+    z-index: -2;
+
+    visibility: hidden;
+  }
+
+  /* TODO: Finish animation */
+  &__add-button {
+    &:first-of-type {
+      position: absolute;
+
+      top: 30%;
+      left: 5%;
+    }
+
+    &:nth-of-type(2) {
+      position: absolute;
+
+      top: 45%;
+      right: 5%;
+    }
+
+    &:last-of-type {
+      position: absolute;
+
+      bottom: 12%;
+      left: 39%;
+    }
+  }
+}
