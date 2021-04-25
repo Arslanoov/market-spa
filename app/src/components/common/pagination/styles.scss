@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
 
-  font-size: 1.4rem;
+  font-size: $pagination-font-size;
 
   &__item {
     display: flex;
@@ -12,9 +12,9 @@
     width: 4rem;
     height: 4rem;
 
-    border: .1rem solid #eaeaea;
+    border: $pagination-item-border;
 
-    color: #888;
+    color: $pagination-item-color;
 
     @include pointer-on-hover();
 
@@ -23,9 +23,9 @@
     }
 
     &_active {
-      border-color: #333;
+      border-color: $pagination-item-active-border-color;
 
-      color: #333;
+      color: $pagination-item-active-color;
     }
   }
 }
