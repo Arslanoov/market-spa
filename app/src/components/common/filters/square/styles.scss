@@ -29,7 +29,7 @@
     color: $filter-square-item-color;
     background-color: $filter-square-item-background-color;
 
-    transition: background-color .5s, color .5s;
+    transition: $filter-square-item-transition;
 
     @include pointer-on-hover();
 

@@ -17,7 +17,7 @@
 
     background: $filter-view-background;
 
-    transition: border .5s;
+    transition: $view-filter-item-transition;
 
     @include pointer-on-hover();
 

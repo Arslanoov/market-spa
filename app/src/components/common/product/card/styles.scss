@@ -7,7 +7,7 @@
 
   box-sizing: content-box;
 
-  transition: all .5s;
+  transition: $product-card-transition;
 
   border: $product-card-transparent-border;
 

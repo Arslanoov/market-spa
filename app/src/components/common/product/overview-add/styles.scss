@@ -3,8 +3,7 @@
 
   border-radius: 2rem;
 
-  /* TODO: Add animations vars */
-  transition: opacity .5s;
+  transition: $overview-add-transition;
 
   @include pointer-on-hover();
 
@@ -31,7 +30,7 @@
 
     box-shadow: $overview-add-icon-box-shadow;
 
-    transition: background-color .5s;
+    transition: $overview-add-icon-transition;
 
     &:hover {
       color: $overview-add-icon-hover-color;
@@ -57,7 +56,7 @@
 
   opacity: 0;
 
-  transition: opacity .5s;
+  transition: $add-modal-transition;
 
   &_first {
     position: absolute;

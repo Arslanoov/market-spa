@@ -38,7 +38,7 @@
 
     color: $filter-list-item-color;
 
-    transition: color .5s;
+    transition: $filter-list-item-transition;
 
     @include pointer-on-hover();
 
