@@ -13,9 +13,9 @@
 
     padding: 1rem;
 
-    border: .1rem solid #eaeaea;
+    border: $filter-view-border;
 
-    background: #fff;
+    background: $filter-view-background;
 
     transition: border .5s;
 
@@ -27,7 +27,7 @@
 
     &:hover,
     &_selected {
-      border-color: #333;
+      border-color: $filter-view-hover-selected-border-color;
     }
   }
 }
