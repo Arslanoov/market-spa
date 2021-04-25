@@ -12,8 +12,12 @@
     TODO: Remove duplicate from nuxt blog
     @see https://github.com/Arslanoov/nuxt-blog/blob/main/app/assets/styles/layout/grid.less
   */
-  @include respond-from(575.98px) {
+  @include respond-from(600.98px) {
     @include grid-columns(calc(50vw - 300px));
+  }
+
+  @include respond-from(768.98px) {
+    @include grid-columns(calc(50vw - 375px));
   }
 
   @include respond-from(1199.98px) {

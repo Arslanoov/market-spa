@@ -1,0 +1,63 @@
+.filter-sort {
+  display: grid;
+
+  align-items: center;
+
+  &__select,
+  &__option {
+    font-size: 1.4rem;
+
+    color: #888;
+  }
+
+  &,
+  &::after {
+    grid-area: select;
+  }
+
+  &__select,
+  &::after {
+    grid-area: select;
+  }
+
+  &::after {
+    content: "";
+    justify-self: end;
+
+    width: .8rem;
+    height: .5rem;
+
+    margin-right: 1.1rem;
+
+    background-image: url("~/assets/images/filters/icons/select-dropdown.png");
+    background-repeat: no-repeat;
+  }
+
+  &__select {
+    grid-template-areas: "select";
+
+    width: 20rem;
+
+    padding: 1.3rem 1.1rem;
+
+    appearance: none;
+
+    border: .1rem solid #eaeaea;
+    outline: none;
+
+    background-color: #ffffff;
+
+    font-family: inherit;
+    line-height: inherit;
+
+    cursor: pointer;
+
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  &__option {
+
+  }
+}
