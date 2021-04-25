@@ -1,0 +1,124 @@
+.about-container,
+.feature-container {
+  &__title {
+    margin-bottom: 3rem;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    color: #333333;
+  }
+}
+
+.about-container {
+  &__wrapper {
+    @include full-grid-width();
+  }
+
+  &__quote {
+    margin: 8rem 0;
+
+    font-size: 2.2rem;
+    font-weight: 300;
+    font-style: italic;
+
+    @include respond(map-get($sizes, "tablet")) {
+      margin: 5rem 0;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 7rem;
+
+    @include respond(map-get($sizes, "tablet")) {
+      flex-direction: column;
+    }
+  }
+
+  &__banner {
+    max-width: 50%;
+
+    margin-right: 3rem;
+
+    @include respond(map-get($sizes, "tablet")) {
+      max-width: 100%;
+
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    color: #888;
+  }
+}
+
+.feature-container {
+  padding: 7rem 0;
+
+  background-color: #f2f2f2;
+
+  &__wrapper {
+    @include full-grid-width();
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    color: #333;
+
+    @include respond(map-get($sizes, "tablet")) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 3rem 4.5rem;
+
+    background-color: #fff;
+
+    &:not(:last-of-type) {
+      margin-right: 3rem;
+
+      @include respond(map-get($sizes, "tablet")) {
+        margin-right: 0;
+        margin-bottom: 3rem;
+      }
+    }
+
+    &-icon {
+      margin-bottom: 3rem;
+    }
+
+    &-title {
+      margin-bottom: 2rem;
+
+      font-size: 1.8rem;
+    }
+
+    &-description {
+      font-size: 1.4rem;
+      line-height: 24px;
+    }
+  }
+}
