@@ -3,6 +3,7 @@ import * as React from "react"
 import MainLayout from "~/layouts/main-layout"
 
 import ProductDetailView from "~/components/common/product/detail/view"
+import ProductDetailTabs from "~/components/common/product/detail/tabs"
 
 import { ProductInterface } from "~/types/product"
 
@@ -40,6 +41,11 @@ const Product: React.FC<ProductProps> = ({ id }: ProductProps) => {
       <div className="container product-container">
         <div className="product-container__wrapper">
           <ProductDetailView product={item} />
+        </div>
+      </div>
+      <div className="container product-tabs-container">
+        <div className="product-tabs-container__wrapper">
+          <ProductDetailTabs />
         </div>
       </div>
     </MainLayout>

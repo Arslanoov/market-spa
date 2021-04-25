@@ -1,0 +1,74 @@
+.product-detail-tabs {
+  padding: 7rem 0;
+
+  &__items {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-bottom: 2rem;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+    font-size: 1.4rem;
+
+    color: #888;
+
+    @include pointer-on-hover();
+
+    &:not(:last-of-type) {
+      margin-right: 2rem;
+
+      @include respond(map-get($sizes, "tablet")) {
+        margin-right: 1rem;
+      }
+    }
+
+    &:hover,
+    &_selected {
+      .product-detail-tabs {
+        &__hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__hover {
+    opacity: 0;
+
+    transition: opacity .5s;
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    color: #333;
+  }
+
+  &__content {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    color: #888;
+  }
+
+  &__paragraph {
+    line-height: 1.3;
+
+    &:not(:last-of-type) {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
