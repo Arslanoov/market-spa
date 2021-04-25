@@ -1,0 +1,24 @@
+.view-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__item {
+    padding: 1rem;
+
+    border: .1rem solid #eaeaea;
+
+    background: #fff;
+
+    @include pointer-on-hover();
+
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+
+    &:hover,
+    &_selected {
+      border-color: #333;
+    }
+  }
+}

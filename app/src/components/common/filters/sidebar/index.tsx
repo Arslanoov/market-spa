@@ -2,9 +2,10 @@ import * as React from "react"
 
 import ListFilter from "~/components/common/filters/list"
 
-import "./styles.scss"
 import SquareFilter from "~/components/common/filters/square"
 import TagFilter from "~/components/common/filters/tag"
+
+import "./styles.scss"
 
 const FiltersSidebar: React.FC = () => {
   return (
