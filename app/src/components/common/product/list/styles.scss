@@ -1,5 +1,5 @@
-.new-arrivals {
-  padding: 6rem 0 3rem;
+.product-list {
+  margin: 6rem 0 3rem;
 
   &__wrapper {
     @include full-grid-width();
@@ -11,7 +11,10 @@
     text-align: center;
   }
 
+  /* TODO: Rename */
   &__title {
+    margin-bottom: 2rem;
+
     font-size: $new-arrivals-title-font-size;
     font-weight: $new-arrivals-title-font-weight;
 
