@@ -71,8 +71,8 @@
   }
 
   &__text {
-    font-size: 14px;
+    font-size: $products-text-font-size;
 
-    color: #888;
+    color: $products-text-color;
   }
 }
