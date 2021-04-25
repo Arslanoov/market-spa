@@ -9,6 +9,7 @@ interface SquareFilterProps {
   withBorder?: boolean
   withActiveColor?: boolean
   items: FilterItemInterface[]
+  titleStyles?: React.CSSProperties
 }
 
 const SquareFilter: React.FC<SquareFilterProps> = ({
@@ -16,12 +17,15 @@ const SquareFilter: React.FC<SquareFilterProps> = ({
   items,
   withBorder = false,
   withActiveColor = false,
+  titleStyles = null,
 }: SquareFilterProps) => {
   const [selected, setSelected] = React.useState<number>(1)
 
   return (
     <div className="square-filter">
-      <div className="square-filter__title">{title}</div>
+      <div className="square-filter__title" style={titleStyles}>
+        {title}
+      </div>
       <div className="square-filter__list">
         {items.map((item) => (
           <div

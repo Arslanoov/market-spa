@@ -2,6 +2,13 @@
   display: flex;
   flex-direction: column;
 
+  @include respond(map-get($sizes, "tablet")) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 2rem;
+  }
+
   &__item {
     max-width: 7.8rem;
 
@@ -13,6 +20,10 @@
 
     &:not(:last-of-type) {
       margin-bottom: 1rem;
+
+      @include respond(map-get($sizes, "tablet")) {
+        margin-bottom: 0;
+      }
     }
 
     &:hover,
