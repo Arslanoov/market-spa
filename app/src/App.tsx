@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from "react-router-dom"
 
 import Home from "~/pages/home"
 import About from "~/pages/about"
+import Contact from "~/pages/contact"
 import Products from "~/pages/products"
 import Product from "~/pages/product"
 import NotFound from "~/pages/not-found"
@@ -15,6 +16,7 @@ const App: React.FC = () => {
     <Switch>
       <Route path="/" component={Home} exact />
       <Route path="/about" component={About} exact />
+      <Route path="/contact" component={Contact} exact />
       <Route path="/products" component={Products} exact />
       <Route
         path="/product/:id"
