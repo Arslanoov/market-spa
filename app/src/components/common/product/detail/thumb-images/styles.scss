@@ -7,6 +7,8 @@
 
     border: .1rem solid rgba(#ceb799, 0);
 
+    transition: border .5s;
+
     @include pointer-on-hover();
 
     &:not(:last-of-type) {

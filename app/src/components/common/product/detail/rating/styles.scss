@@ -1,0 +1,21 @@
+.rating {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    width: 1.4rem;
+    height: 1.4rem;
+
+    background-image: url("~/assets/images/rating/star.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:not(:last-of-type) {
+      margin-right: .5rem;
+    }
+
+    &_active {
+      background-image: url("~/assets/images/rating/star_active.svg");
+    }
+  }
+}

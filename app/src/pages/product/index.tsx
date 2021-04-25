@@ -39,7 +39,7 @@ const Product: React.FC<ProductProps> = ({ id }: ProductProps) => {
     >
       <div className="container product-container">
         <div className="product-container__wrapper">
-          <ProductDetailView />
+          <ProductDetailView product={item} />
         </div>
       </div>
     </MainLayout>
