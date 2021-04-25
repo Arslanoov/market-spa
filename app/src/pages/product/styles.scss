@@ -1,0 +1,17 @@
+.product-container {
+  margin: 3rem 0 5rem;
+
+  &__wrapper {
+    @include full-grid-width();
+  }
+}
+
+.product-tabs-container {
+  margin: 6rem 0;
+
+  background-color: #f5f5f5;
+
+  &__wrapper {
+    @include full-grid-width();
+  }
+}
