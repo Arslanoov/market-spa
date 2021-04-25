@@ -3,8 +3,9 @@ import * as React from "react"
 import ViewFilter from "~/components/common/filters/view"
 import SelectFilter from "~/components/common/filters/select"
 
-import "./styles.scss"
 import Pagination from "~/components/common/pagination"
+
+import "./styles.scss"
 
 const FiltersRow: React.FC = () => {
   return (

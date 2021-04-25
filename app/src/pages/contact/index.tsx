@@ -5,8 +5,9 @@ import LocationIcon from "~/assets/images/contact/icons/location.png"
 import PhoneIcon from "~/assets/images/contact/icons/phone.png"
 import PostIcon from "~/assets/images/contact/icons/post.png"
 
-import "./styles.scss"
 import MainLayout from "~/layouts/main-layout"
+
+import "./styles.scss"
 
 const Contact: React.FC = () => {
   return (
