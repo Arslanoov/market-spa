@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { FilterInterface } from "~/types/filter"
+import { FilterItemInterface } from "~/types/filter"
 
 import DropdownIcon from "~/assets/images/filters/icons/dropdown.png"
 
@@ -8,7 +8,7 @@ import "./styles.scss"
 
 interface FiltersListProps {
   title: string
-  filters: FilterInterface[]
+  filters: FilterItemInterface[]
 }
 
 const ListFilter: React.FC<FiltersListProps> = ({ title, filters }: FiltersListProps) => {
@@ -24,7 +24,7 @@ const ListFilter: React.FC<FiltersListProps> = ({ title, filters }: FiltersListP
         <div className="filter__list">
           {filters.map((filter) => (
             <div key={filter.id} className="filter__item">
-              {filter.name}
+              {filter.value}
             </div>
           ))}
         </div>

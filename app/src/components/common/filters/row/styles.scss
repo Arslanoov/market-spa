@@ -1,0 +1,32 @@
+.filters-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 2rem;
+  margin-right: 3rem;
+
+  @include respond(map-get($sizes, "tablet")) {
+    margin-right: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 1rem;
+
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__prefix {
+    margin-right: 1.1rem;
+
+    font-size: 1.4rem;
+
+    color: #888;
+  }
+}

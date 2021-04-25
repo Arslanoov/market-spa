@@ -2,6 +2,8 @@
 $bold: 700;
 $extra-bold: 800;
 
+$default: 1.4rem;
+
 // Welcome
 $welcome-title-font-size: 35rem;
 $welcome-title-font-weight: $bold;
@@ -10,7 +12,7 @@ $welcome-title-letter-spacing: -2.45rem;
 $welcome-story-font-size: 5rem;
 $welcome-story-font-weight: $extra-bold;
 $welcome-story-letter-spacing: -0.35rem;
-$welcome-story-text-author-font-size: 1.4rem;
+$welcome-story-text-author-font-size: $default;
 
 // Header
 // Logo
@@ -25,19 +27,19 @@ $logo-subtitle-font-weight: $bold;
 $logo-subtitle-letter-spacing: -0.091rem;
 
 // Nav cart
-$nav-cart-font-size: 1.4rem;
+$nav-cart-font-size: $default;
 
 // New arrivals
 $new-arrivals-title-font-size: 2.8rem;
 $new-arrivals-title-font-weight: $bold;
-$new-arrivals-description-font-size: 1.4rem;
+$new-arrivals-description-font-size: $default;
 
 // Product card
-$product-card-info-font-size: 1.4rem;
+$product-card-info-font-size: $default;
 $product-card-price-font-weight: $bold;
 
 // Card control
-$card-control-font-size: 1.4rem;
+$card-control-font-size: $default;
 $card-control-small-font-size: 1.2rem;
 $card-control-font-weight: $bold;
 
@@ -45,27 +47,52 @@ $card-control-font-weight: $bold;
 $product-overview-title-font-size: 4.5rem;
 $product-overview-title-font-weight: $extra-bold;
 $product-overview-title-line-height: 5.5rem;
-$product-overview-description-font-size: 1.4rem;
+$product-overview-description-font-size: $default;
 $product-overview-important-font-weight: $bold;
-$product-overview-detail-font-size: 1.4rem;
+$product-overview-detail-font-size: $default;
 $product-overview-detail-font-weight: $bold;
 
 // Add modal
-$add-modal-font-size: 1.4rem;
+$add-modal-font-size: $default;
 $add-modal-title-font-weight: $bold;
 
 // Quotes
-$quotes-font-size: 1.4rem;
+$quotes-font-size: $default;
 $quotes-quote-font-size: 4rem;
 $quotes-quote-font-size-small: 3rem;
 $quotes-quote-font-weight: $bold;
-$quotes-author-font-size: 1.4rem;
+$quotes-author-font-size: $default;
 $quotes-name-font-weight: $bold;
 
 // Footer
-$footer-columns-font-size: 1.4rem;
+$footer-columns-font-size: $default;
 $footer-title-font-weight: $bold;
-$footer-copyright-font-size: 1.4rem;
+$footer-copyright-font-size: $default;
 
 // Breadcrumbs
 $breadcrumbs-font-size: 1.2rem;
+
+// Products
+$products-text-font-size: $default;
+
+// Filters
+// List
+$filter-list-title-font-size: 1.6rem;
+$filter-list-title-font-weight: $bold;
+$filter-list-item-font-size: $default;
+
+// Square
+$filter-square-title-font-size: 1.6rem;
+$filter-square-title-font-weight: $bold;
+$filter-square-list-font-size: $default;
+
+// Tag
+$filter-tag-title-font-size: 1.6rem;
+$filter-tag-title-font-weight: $bold;
+$filter-tag-item-font-size: $default;
+
+// Select
+$filter-select-font-size: $default;
+
+// Pagination
+$pagination-font-size: $default;

@@ -3,7 +3,9 @@ import * as React from "react"
 import MainLayout from "~/layouts/main-layout"
 
 import FiltersSidebar from "~/components/common/filters/sidebar"
+import FiltersRow from "~/components/common/filters/row"
 import Card from "~/components/common/product/card"
+import Pagination from "~/components/common/pagination"
 
 import { ProductInterface } from "~/types/product"
 
@@ -105,11 +107,26 @@ const Products: React.FC = () => {
           <FiltersSidebar />
         </div>
         <div className="products-container__content">
-          {list.map((item) => (
-            <div key={item.id} className="products-container__item">
-              <Card item={item} />
+          <FiltersRow />
+          <div className="products-container__items">
+            {list.map((item) => (
+              <div key={item.id} className="products-container__item">
+                <Card item={item} />
+              </div>
+            ))}
+          </div>
+          <div className="products-container__row">
+            <div className="products-container__text">Showing 1-16 of 53 products</div>
+            <div className="products-container__text__item">
+              <Pagination
+                pagesCount={3}
+                currentPage={2}
+                onPageChange={() => {}}
+                onPrevPage={() => {}}
+                onNextPage={() => {}}
+              />
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </MainLayout>

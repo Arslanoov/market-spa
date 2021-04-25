@@ -6,6 +6,9 @@ $mine-shaft: #333;
 $malta: #bcae9a;
 $sorrell-brown: #ceb799;
 $silver: #bcbcbc;
+$wild-sand: #f5f5f5;
+$gallery: #eaeaea;
+$mongoose: #b7a58d;
 
 // Welcome
 $welcome-background-color: rgba($black, .07);
@@ -41,7 +44,7 @@ $product-price-color: $sorrell-brown;
 // Card control
 $card-control-color: $white;
 $card-control-background-color: $sorrell-brown;
-$card-control-item-hover-background-color: #b7a58d;
+$card-control-item-hover-background-color: $mongoose;
 
 // Product overview
 $product-overview-background-color: rgba($black, .07);
@@ -70,7 +73,7 @@ $quotes-author-color: $grey;
 $quotes-name-color: $mine-shaft;
 
 // Footer
-$footer-background-color: #f5f5f5;
+$footer-background-color: $wild-sand;
 $footer-title-color: $mine-shaft;
 $footer-title-value-color: $grey;
 $footer-title-copyright-color: $grey;
@@ -79,3 +82,45 @@ $footer-title-copyright-color: $grey;
 $breadcrumbs-name-color: $grey;
 $breadcrumbs-latest-name-color: $mine-shaft;
 $breadcrumbs-line-background: $grey;
+
+// Products
+$products-text-color: $grey;
+
+// Filters
+// Sidebar
+$sidebar-background-color: $gallery;
+
+// List
+$filter-list-title-color: $mine-shaft;
+$filter-list-item-color: $grey;
+$filter-list-selected-hover-item-color: $mine-shaft;
+
+// Square
+$filter-square-item-color: $mine-shaft;
+$filter-square-item-background-color: $wild-sand;
+$filter-square-item-colored-hover-color: $white;
+$filter-square-item-colored-hover-background-color: $mine-shaft;
+$filter-square-item-bordered-border: .1rem solid $gallery;
+$filter-square-item-selected-border: .5rem solid $white;
+$filter-square-item-selected-outline: .1rem solid $gallery;
+
+// Tag
+$filter-tag-title-color: $mine-shaft;
+$filter-tag-item-color: $grey;
+$filter-tag-item-background-color: $wild-sand;
+
+// View
+$filter-view-border: .1rem solid $gallery;
+$filter-view-background: $white;
+$filter-view-hover-selected-border-color: $mine-shaft;
+
+// Select
+$filter-select-color: $grey;
+$filter-select-border: .1rem solid $gallery;
+$filter-select-background-color: $white;
+
+// Pagination
+$pagination-item-border: .1rem solid $gallery;
+$pagination-item-color: $grey;
+$pagination-item-active-border-color: $mine-shaft;
+$pagination-item-active-color: $mine-shaft;

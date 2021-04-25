@@ -2,8 +2,8 @@
   &__title {
     margin-bottom: 3rem;
 
-    font-size: 1.6rem;
-    font-weight: 700;
+    font-size: $filter-square-title-font-size;
+    font-weight: $filter-square-title-font-weight;
 
     text-transform: uppercase;
   }
@@ -13,7 +13,7 @@
     align-items: center;
     flex-wrap: wrap;
 
-    font-size: 1.4rem;
+    font-size: $filter-square-list-font-size;
   }
 
   &__item {
@@ -26,10 +26,10 @@
 
     margin-bottom: 1rem;
 
-    color: #888;
-    background-color: #f5f5f5;
+    color: $filter-square-item-color;
+    background-color: $filter-square-item-background-color;
 
-    transition: background-color .5s, color .5s;
+    transition: $filter-square-item-transition;
 
     @include pointer-on-hover();
 
@@ -39,17 +39,17 @@
 
     &:hover,
     &_colored {
-      color: #ffffff;
-      background-color: #333333;
+      color: $filter-square-item-colored-hover-color;
+      background-color: $filter-square-item-colored-hover-background-color;
     }
 
     &_bordered {
-      border: .1rem solid #eaeaea;
+      border: $filter-square-item-bordered-border;
     }
 
     &_selected {
-      border: .5rem solid #fff;
-      outline: .1rem solid #eaeaea;
+      border: $filter-square-item-selected-border;
+      outline: $filter-square-item-selected-outline;
     }
   }
 }

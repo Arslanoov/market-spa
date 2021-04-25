@@ -1,0 +1,31 @@
+.pagination {
+  display: flex;
+  align-items: center;
+
+  font-size: $pagination-font-size;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 4rem;
+    height: 4rem;
+
+    border: $pagination-item-border;
+
+    color: $pagination-item-color;
+
+    @include pointer-on-hover();
+
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+
+    &_active {
+      border-color: $pagination-item-active-border-color;
+
+      color: $pagination-item-active-color;
+    }
+  }
+}

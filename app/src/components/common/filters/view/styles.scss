@@ -1,0 +1,33 @@
+.view-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 4rem;
+    height: 4rem;
+
+    padding: 1rem;
+
+    border: $filter-view-border;
+
+    background: $filter-view-background;
+
+    transition: $view-filter-item-transition;
+
+    @include pointer-on-hover();
+
+    &:not(:last-of-type) {
+      margin-right: 1rem;
+    }
+
+    &:hover,
+    &_selected {
+      border-color: $filter-view-hover-selected-border-color;
+    }
+  }
+}

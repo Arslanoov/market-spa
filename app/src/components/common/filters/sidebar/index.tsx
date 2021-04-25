@@ -2,9 +2,10 @@ import * as React from "react"
 
 import ListFilter from "~/components/common/filters/list"
 
-import "./styles.scss"
 import SquareFilter from "~/components/common/filters/square"
 import TagFilter from "~/components/common/filters/tag"
+
+import "./styles.scss"
 
 const FiltersSidebar: React.FC = () => {
   return (
@@ -14,23 +15,23 @@ const FiltersSidebar: React.FC = () => {
         filters={[
           {
             id: 1,
-            name: "All s.u.m.o Watches",
+            value: "All s.u.m.o Watches",
           },
           {
             id: 2,
-            name: "Men’s watch",
+            value: "Men’s watch",
           },
           {
             id: 3,
-            name: "Women’s watch",
+            value: "Women’s watch",
           },
           {
             id: 4,
-            name: "Leather watch",
+            value: "Leather watch",
           },
           {
             id: 5,
-            name: "Electric watch",
+            value: "Electric watch",
           },
         ]}
       />
@@ -40,27 +41,27 @@ const FiltersSidebar: React.FC = () => {
         filters={[
           {
             id: 1,
-            name: "All",
+            value: "All",
           },
           {
             id: 2,
-            name: "$0.00 - $100.00",
+            value: "$0.00 - $100.00",
           },
           {
             id: 3,
-            name: "$100.00 - $500.00",
+            value: "$100.00 - $500.00",
           },
           {
             id: 4,
-            name: "$500.00 - $1000.00",
+            value: "$500.00 - $1000.00",
           },
           {
             id: 5,
-            name: "$1000.00 - $5000.00",
+            value: "$1000.00 - $5000.00",
           },
           {
             id: 6,
-            name: "$5000.00 +",
+            value: "$5000.00 +",
           },
         ]}
       />
@@ -156,19 +157,19 @@ const FiltersSidebar: React.FC = () => {
         filters={[
           {
             id: 1,
-            name: "Rolex",
+            value: "Rolex",
           },
           {
             id: 2,
-            name: "Citizen",
+            value: "Citizen",
           },
           {
             id: 3,
-            name: "Omega",
+            value: "Omega",
           },
           {
             id: 4,
-            name: "Casio",
+            value: "Casio",
           },
         ]}
       />
