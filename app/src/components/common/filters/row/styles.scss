@@ -9,4 +9,17 @@
   @include respond(map-get($sizes, "tablet")) {
     margin-right: 0;
   }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__prefix {
+    margin-right: 1.1rem;
+
+    font-size: 1.4rem;
+
+    color: #888;
+  }
 }
