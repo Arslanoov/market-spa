@@ -13,12 +13,12 @@
   }
 
   &__title {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: $filter-list-title-font-size;
+    font-weight: $filter-list-title-font-weight;
 
     text-transform: uppercase;
 
-    color: #333;
+    color: $filter-list-title-color;
   }
 
   &__dropdown {
@@ -34,9 +34,9 @@
   }
 
   &__item {
-    font-size: 14px;
+    font-size: $filter-list-item-font-size;
 
-    color: #888;
+    color: $filter-list-item-color;
 
     transition: color .5s;
 
@@ -50,7 +50,7 @@
     &_selected {
       text-decoration: underline;
 
-      color: #333;
+      color: $filter-list-selected-hover-item-color;
     }
   }
 }
