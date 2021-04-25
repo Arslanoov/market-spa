@@ -1,0 +1,5 @@
+.product-container {
+  &__wrapper {
+    @include full-grid-width();
+  }
+}

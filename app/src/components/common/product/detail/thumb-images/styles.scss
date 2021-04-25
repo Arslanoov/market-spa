@@ -1,0 +1,21 @@
+.thumb-images {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    max-width: 7.8rem;
+
+    border: .1rem solid rgba(#ceb799, 0);
+
+    @include pointer-on-hover();
+
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+
+    &:hover,
+    &_selected {
+      border: .1rem solid #ceb799;
+    }
+  }
+}
