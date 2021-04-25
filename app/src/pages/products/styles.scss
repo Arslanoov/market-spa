@@ -1,10 +1,14 @@
 .products-container {
-  margin: 2rem 0;
+  margin: 2rem 0 4rem;
+
+  &__sidebar,
+  &__item,
+  &__row {
+    margin-right: 3rem;
+  }
 
   &__sidebar {
     @include grid-col-range(1, 4);
-
-    margin-right: 3rem;
 
     @include respond(map-get($sizes, "tablet")) {
       @include full-grid-width();
@@ -49,12 +53,26 @@
       margin-bottom: 2rem;
     }
 
-    &:not(:last-of-type) {
-      margin-right: 3rem;
-
-      @include respond(map-get($sizes, "tablet")) {
-        margin-right: 0;
-      }
+    @include respond(map-get($sizes, "tablet")) {
+      margin-right: 0;
     }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__text,
+  &__item {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 14px;
+
+    color: #888;
   }
 }

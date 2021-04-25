@@ -4,6 +4,7 @@ import ViewFilter from "~/components/common/filters/view"
 import SelectFilter from "~/components/common/filters/select"
 
 import "./styles.scss"
+import Pagination from "~/components/common/pagination"
 
 const FiltersRow: React.FC = () => {
   return (
@@ -55,6 +56,16 @@ const FiltersRow: React.FC = () => {
               value: 5,
             },
           ]}
+        />
+      </div>
+
+      <div className="filters-row__item">
+        <Pagination
+          pagesCount={3}
+          currentPage={2}
+          onPageChange={() => {}}
+          onPrevPage={() => {}}
+          onNextPage={() => {}}
         />
       </div>
     </div>

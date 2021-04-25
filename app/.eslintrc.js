@@ -24,6 +24,7 @@ module.exports = {
     semi: ["error", "never"],
     quotes: ["error", "double"],
 
-    "@typescript-eslint/no-var-requires": 0
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-empty-function": 0
   },
 }

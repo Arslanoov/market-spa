@@ -1,6 +1,5 @@
 .filter-select {
   display: grid;
-
   align-items: center;
 
   &__select,
@@ -36,7 +35,7 @@
   &__select {
     grid-template-areas: "select";
 
-    padding: 1.3rem 1.1rem;
+    padding: 1rem 1.1rem;
 
     appearance: none;
 
