@@ -11,6 +11,7 @@ $gallery: #eaeaea;
 $mongoose: #b7a58d;
 $christi: #34b009;
 $rodeo-dust: #d0b49c;
+$concrete: #f2f2f2;
 
 // Welcome
 $welcome-background-color: rgba($black, .07);
@@ -150,3 +151,10 @@ $product-view-button-background-color: $rodeo-dust;
 $product-view-input-border: .1rem solid $gallery;
 $product-view-action-border: .1rem solid $gallery;
 $product-view-action-background-color: $white;
+
+// About page
+$about-title-color: $mine-shaft;
+$about-paragraph-color: $mine-shaft;
+$about-features-background-color: $concrete;
+$about-list-color: $mine-shaft;
+$about-feature-background-color: $white;

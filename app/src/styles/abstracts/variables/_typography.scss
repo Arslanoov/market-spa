@@ -1,8 +1,11 @@
 // Common
+$light: 300;
 $bold: 700;
 $extra-bold: 800;
 
 $default: 1.4rem;
+
+$italic: italic;
 
 // Welcome
 $welcome-title-font-size: 35rem;
@@ -116,3 +119,14 @@ $product-view-description-line-height: 2.4rem;
 $product-view-cart-font-size: 1.4rem;
 $product-view-button-font-weight: $bold;
 
+// About page
+$about-title-font-size: 2.8rem;
+$about-title-font-weight: $bold;
+$about-quote-font-size: 2.2rem;
+$about-quote-font-weight: $light;
+$about-quote-font-style: $italic;
+$about-paragraph-font-size: $default;
+$about-paragraph-line-height: 2.4rem;
+$about-title-font-size: 1.8rem;
+$about-description-font-size: 1.4rem;
+$about-description-line-height: 2.4rem;
