@@ -114,9 +114,9 @@ $product-view-title-font-size: 3.5rem;
 $product-view-price-font-size: 2.8rem;
 $product-view-reviews-count-font-size: $default;
 $product-view-availability-font-size: $default;
-$product-view-description-font-size: 1.4rem;
+$product-view-description-font-size: $default;
 $product-view-description-line-height: 2.4rem;
-$product-view-cart-font-size: 1.4rem;
+$product-view-cart-font-size: $default;
 $product-view-button-font-weight: $bold;
 
 // About page
@@ -128,5 +128,12 @@ $about-quote-font-style: $italic;
 $about-paragraph-font-size: $default;
 $about-paragraph-line-height: 2.4rem;
 $about-title-font-size: 1.8rem;
-$about-description-font-size: 1.4rem;
+$about-description-font-size:  $default;
 $about-description-line-height: 2.4rem;
+
+// Contact page
+$contact-info-font-size: $default;
+$contact-title-font-size: 2.8rem;
+$contact-title-font-weight: $bold;
+$contact-send-button-font-size: $default;
+$contact-send-button-font-weight: $bold;
