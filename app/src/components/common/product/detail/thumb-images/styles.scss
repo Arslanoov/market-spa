@@ -12,9 +12,9 @@
   &__item {
     max-width: 7.8rem;
 
-    border: .1rem solid rgba(#ceb799, 0);
+    border: $product-thumb-images-border;
 
-    transition: border .5s;
+    transition: $product-thumb-images-item-transition;
 
     @include pointer-on-hover();
 
@@ -28,7 +28,7 @@
 
     &:hover,
     &_selected {
-      border: .1rem solid #ceb799;
+      border: $product-thumb-images-hover-selected-border;
     }
   }
 }
