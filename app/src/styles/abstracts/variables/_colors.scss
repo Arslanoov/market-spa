@@ -9,6 +9,8 @@ $silver: #bcbcbc;
 $wild-sand: #f5f5f5;
 $gallery: #eaeaea;
 $mongoose: #b7a58d;
+$christi: #34b009;
+$rodeo-dust: #d0b49c;
 
 // Welcome
 $welcome-background-color: rgba($black, .07);
@@ -133,4 +135,18 @@ $product-tabs-content-color: $grey;
 // Thumb images
 $product-thumb-images-border: .1rem solid rgba($sorrell-brown, 0);
 $product-thumb-images-hover-selected-border: .1rem solid $sorrell-brown;
-
+// View
+$product-view-line-background-color: $gallery;
+$product-view-title-color: $mine-shaft;
+$product-view-price-color: $sorrell-brown;
+$product-view-reviews-count-color: $grey;
+$product-view-text-color: $grey;
+$product-view-status-color: $christi;
+$product-view-description-color: $grey;
+$product-view-action-border: .1rem solid $gallery;
+$product-view-action-background-color: $white;
+$product-view-button-color: $white;
+$product-view-button-background-color: $rodeo-dust;
+$product-view-input-border: .1rem solid $gallery;
+$product-view-action-border: .1rem solid $gallery;
+$product-view-action-background-color: $white;

@@ -73,7 +73,7 @@
 
     margin: 3rem 0;
 
-    background-color: #eaeaea;
+    background-color: $product-view-line-background-color;
 
     &:first-of-type {
       margin-top: 0;
@@ -92,19 +92,19 @@
 
   &__title,
   &__price {
-    font-weight: 700;
+    font-weight: $product-view-title-price-font-weight;
   }
 
   &__title {
-    font-size: 3.5rem;
+    font-size: $product-view-title-font-size;
 
-    color: #333;
+    color: $product-view-title-color;
   }
 
   &__price {
-    font-size: 2.8rem;
+    font-size: $product-view-price-font-size;
 
-    color: #ceb799;
+    color: $product-view-price-color;
   }
 
   &__rating {
@@ -119,37 +119,37 @@
   }
 
   &__reviews-count {
-    font-size: 1.4rem;
+    font-size: $product-view-reviews-count-font-size;
 
-    color: #888;
+    color: $product-view-reviews-count-color;
   }
 
   &__availability {
     display: flex;
     align-items: center;
 
-    font-size: 14px;
+    font-size: $product-view-availability-font-size;
 
     &-text {
       margin-right: .5rem;
 
-      color: #888;
+      color: $product-view-text-color;
     }
 
     &-status {
-      color: #34b009;
+      color: $product-view-status-color;
     }
   }
 
   &__description {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    font-size: $product-view-description-font-size;
+    line-height: $product-view-description-line-height;
 
-    color: #888;
+    color: $product-view-description-color;
   }
 
   &__cart {
-    font-size: 1.4rem;
+    font-size: $product-view-cart-font-size;
 
     &-form {
       display: flex;
@@ -159,8 +159,8 @@
     &-action,
     &-button,
     &-input {
-      border: 0;
-      outline: 0;
+      border: none;
+      outline: none;
     }
 
     &-action {
@@ -171,9 +171,9 @@
       width: 4rem;
       height: 4rem;
 
-      border: 1px solid #eaeaea;
+      border: $product-view-action-border;
 
-      background-color: #ffffff;
+      background-color: $product-view-action-background-color;
 
       @include pointer-on-hover();
     }
@@ -183,10 +183,10 @@
 
       padding: 0 7rem;
 
-      color: #ffffff;
-      background-color: #d0b49c;
+      color: $product-view-button-color;
+      background-color: $product-view-button-background-color;
 
-      font-weight: 700;
+      font-weight: $product-view-button-font-weight;
 
       text-transform: uppercase;
 
@@ -199,8 +199,8 @@
 
       text-align: center;
 
-      border-top: .1rem solid #eaeaea;
-      border-bottom: .1rem solid #eaeaea;
+      border-top: $product-view-input-border;
+      border-bottom: $product-view-input-border;
     }
   }
 
@@ -212,8 +212,8 @@
     width: 4rem;
     height: 4rem;
 
-    border: 1px solid #eaeaea;
-    background-color: #ffffff;
+    border: $product-view-action-border;
+    background-color: $product-view-action-background-color;
 
     @include pointer-on-hover();
   }
