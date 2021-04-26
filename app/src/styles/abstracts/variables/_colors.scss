@@ -9,6 +9,9 @@ $silver: #bcbcbc;
 $wild-sand: #f5f5f5;
 $gallery: #eaeaea;
 $mongoose: #b7a58d;
+$christi: #34b009;
+$rodeo-dust: #d0b49c;
+$concrete: #f2f2f2;
 
 // Welcome
 $welcome-background-color: rgba($black, .07);
@@ -32,8 +35,8 @@ $logo-subtitle-background-color: $white;
 // Nav cart
 $nav-cart-color: $grey;
 
-// New arrivals
-$new-arrivals-description-color: $grey;
+// Posts list
+$posts-list-description-color: $grey;
 
 // Product card
 $product-card-border: .1rem solid $sorrell-brown;
@@ -124,3 +127,43 @@ $pagination-item-border: .1rem solid $gallery;
 $pagination-item-color: $grey;
 $pagination-item-active-border-color: $mine-shaft;
 $pagination-item-active-color: $mine-shaft;
+
+// Product detail
+// Tabs
+$product-tabs-item-color: $grey;
+$product-tabs-item-text-color: $mine-shaft;
+$product-tabs-content-color: $grey;
+// Thumb images
+$product-thumb-images-border: .1rem solid rgba($sorrell-brown, 0);
+$product-thumb-images-hover-selected-border: .1rem solid $sorrell-brown;
+// View
+$product-view-line-background-color: $gallery;
+$product-view-title-color: $mine-shaft;
+$product-view-price-color: $sorrell-brown;
+$product-view-reviews-count-color: $grey;
+$product-view-text-color: $grey;
+$product-view-status-color: $christi;
+$product-view-description-color: $grey;
+$product-view-action-border: .1rem solid $gallery;
+$product-view-action-background-color: $white;
+$product-view-button-color: $white;
+$product-view-button-background-color: $rodeo-dust;
+$product-view-input-border: .1rem solid $gallery;
+$product-view-action-border: .1rem solid $gallery;
+$product-view-action-background-color: $white;
+
+// About page
+$about-title-color: $mine-shaft;
+$about-paragraph-color: $mine-shaft;
+$about-features-background-color: $concrete;
+$about-list-color: $mine-shaft;
+$about-feature-background-color: $white;
+
+// Contact page
+$contact-info-color: $grey;
+$contact-info-background-color: $white;
+$contact-input-textarea-border: .1rem solid $gallery;
+$contact-input-color: $mine-shaft;
+$contact-input-placeholder-color: $grey;
+$contact-send-button-color: $white;
+$contact-send-button-background-color: $mine-shaft;

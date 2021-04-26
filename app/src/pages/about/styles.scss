@@ -3,12 +3,12 @@
   &__title {
     margin-bottom: 3rem;
 
-    font-size: 28px;
-    font-weight: 700;
+    font-size: $about-title-font-size;
+    font-weight: $about-title-font-weight;
 
     text-transform: uppercase;
 
-    color: #333333;
+    color: $about-title-color;
   }
 }
 
@@ -20,9 +20,9 @@
   &__quote {
     margin: 8rem 0;
 
-    font-size: 2.2rem;
-    font-weight: 300;
-    font-style: italic;
+    font-size: $about-quote-font-size;
+    font-weight: $about-quote-font-weight;
+    font-style: $about-quote-font-style;
 
     @include respond(map-get($sizes, "tablet")) {
       margin: 5rem 0;
@@ -55,17 +55,17 @@
   }
 
   &__paragraph {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    font-size: $about-paragraph-font-size;
+    line-height: $about-paragraph-line-height;
 
-    color: #888;
+    color: $about-paragraph-color;
   }
 }
 
 .feature-container {
   padding: 7rem 0;
 
-  background-color: #f2f2f2;
+  background-color: $about-features-background-color;
 
   &__wrapper {
     @include full-grid-width();
@@ -79,7 +79,7 @@
     display: flex;
     justify-content: space-between;
 
-    color: #333;
+    color: $about-list-color;
 
     @include respond(map-get($sizes, "tablet")) {
       flex-direction: column;
@@ -95,7 +95,7 @@
 
     padding: 3rem 4.5rem;
 
-    background-color: #fff;
+    background-color: $about-feature-background-color;
 
     &:not(:last-of-type) {
       margin-right: 3rem;
@@ -113,12 +113,12 @@
     &-title {
       margin-bottom: 2rem;
 
-      font-size: 1.8rem;
+      font-size: $about-title-font-size;
     }
 
     &-description {
-      font-size: 1.4rem;
-      line-height: 24px;
+      font-size: $about-description-font-size;
+      line-height: $about-description-line-height;
     }
   }
 }

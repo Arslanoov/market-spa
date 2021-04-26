@@ -20,9 +20,8 @@
     width: 1.5rem + 2 * 1rem;
     height: 1.5rem + 2 * 1rem;
 
-    background-image: url("~/assets/images/overview/icons/add_black.svg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background: url("~/assets/images/overview/icons/add_black.svg") no-repeat #fff;
 
     padding: .5rem;
 

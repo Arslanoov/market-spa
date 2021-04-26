@@ -1,8 +1,8 @@
 import * as React from "react"
 
-import LocationIcon from "~/assets/images/footer/icons/location.png"
-import PhoneIcon from "~/assets/images/footer/icons/phone.png"
-import PostIcon from "~/assets/images/footer/icons/post.png"
+import LocationIcon from "~/assets/images/icons/location.png"
+import PhoneIcon from "~/assets/images/icons/phone.png"
+import PostIcon from "~/assets/images/icons/post.png"
 
 import PaymentMethods from "~/assets/images/payment/methods.png"
 

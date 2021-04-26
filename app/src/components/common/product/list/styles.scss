@@ -11,20 +11,19 @@
     text-align: center;
   }
 
-  /* TODO: Rename */
   &__title {
     margin-bottom: 2rem;
 
-    font-size: $new-arrivals-title-font-size;
-    font-weight: $new-arrivals-title-font-weight;
+    font-size: $posts-list-title-font-size;
+    font-weight: $posts-list-title-font-weight;
 
     text-transform: uppercase;
   }
 
   &__description {
-    font-size: $new-arrivals-description-font-size;
+    font-size: $posts-list-description-font-size;
 
-    color: $new-arrivals-description-color;
+    color: $posts-list-description-color;
   }
 }
 

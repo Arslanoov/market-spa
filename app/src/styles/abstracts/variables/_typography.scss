@@ -1,8 +1,11 @@
 // Common
+$light: 300;
 $bold: 700;
 $extra-bold: 800;
 
 $default: 1.4rem;
+
+$italic: italic;
 
 // Welcome
 $welcome-title-font-size: 35rem;
@@ -29,10 +32,10 @@ $logo-subtitle-letter-spacing: -0.091rem;
 // Nav cart
 $nav-cart-font-size: $default;
 
-// New arrivals
-$new-arrivals-title-font-size: 2.8rem;
-$new-arrivals-title-font-weight: $bold;
-$new-arrivals-description-font-size: $default;
+// Posts list
+$posts-list-title-font-size: 2.8rem;
+$posts-list-title-font-weight: $bold;
+$posts-list-description-font-size: $default;
 
 // Product card
 $product-card-info-font-size: $default;
@@ -96,3 +99,41 @@ $filter-select-font-size: $default;
 
 // Pagination
 $pagination-font-size: $default;
+
+// Product detail
+// Tabs
+$product-tabs-item-font-size: $default;
+$product-tabs-text-font-size: 1.8rem;
+$product-tabs-text-font-weight: $bold;
+$product-tabs-content-font-size: $default;
+$product-tabs-content-line-height: 2.4rem;
+$product-tabs-paragraph-line-height: 1.3;
+// View
+$product-view-title-price-font-weight: $bold;
+$product-view-title-font-size: 3.5rem;
+$product-view-price-font-size: 2.8rem;
+$product-view-reviews-count-font-size: $default;
+$product-view-availability-font-size: $default;
+$product-view-description-font-size: $default;
+$product-view-description-line-height: 2.4rem;
+$product-view-cart-font-size: $default;
+$product-view-button-font-weight: $bold;
+
+// About page
+$about-title-font-size: 2.8rem;
+$about-title-font-weight: $bold;
+$about-quote-font-size: 2.2rem;
+$about-quote-font-weight: $light;
+$about-quote-font-style: $italic;
+$about-paragraph-font-size: $default;
+$about-paragraph-line-height: 2.4rem;
+$about-title-font-size: 1.8rem;
+$about-description-font-size:  $default;
+$about-description-line-height: 2.4rem;
+
+// Contact page
+$contact-info-font-size: $default;
+$contact-title-font-size: 2.8rem;
+$contact-title-font-weight: $bold;
+$contact-send-button-font-size: $default;
+$contact-send-button-font-weight: $bold;
