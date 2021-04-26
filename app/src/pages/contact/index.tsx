@@ -1,9 +1,8 @@
 import * as React from "react"
 
-/* TODO: Replace icons */
-import LocationIcon from "~/assets/images/contact/icons/location.png"
-import PhoneIcon from "~/assets/images/contact/icons/phone.png"
-import PostIcon from "~/assets/images/contact/icons/post.png"
+import LocationIcon from "~/assets/images/icons/location.png"
+import PhoneIcon from "~/assets/images/icons/phone.png"
+import PostIcon from "~/assets/images/icons/post.png"
 
 import MainLayout from "~/layouts/main-layout"
 
