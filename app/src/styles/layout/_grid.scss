@@ -8,10 +8,6 @@
     @include grid-columns(35px);
   }
 
-  /*
-    TODO: Remove duplicate from nuxt blog
-    @see https://github.com/Arslanoov/nuxt-blog/blob/main/app/assets/styles/layout/grid.less
-  */
   @include respond-from(600.98px) {
     @include grid-columns(calc(50vw - 300px));
   }
